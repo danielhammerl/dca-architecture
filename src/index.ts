@@ -1,10 +1,10 @@
-import { Byte, HalfWord, Instructions, Register } from './types';
+import { Byte, HalfWord, Instructions, Registers } from './types';
 import { EMPTY_BYTE } from './constants';
 
 export * from './types';
 export * from './constants';
 
-export const InstructionBinaryMap: Record<Instructions, Byte> = {
+export const InstructionBinaryMap: Record<typeof Instructions[number], Byte> = {
   LOAD: '00000001',
   STORE: '00000010',
   SET: '00000011',
@@ -16,7 +16,7 @@ export const InstructionBinaryMap: Record<Instructions, Byte> = {
   MOV: '00001001',
 };
 
-export const registerBinaryCode: Record<Register, HalfWord> = {
+export const registerBinaryCode: Record<typeof Registers[number], HalfWord> = {
   RPC: [EMPTY_BYTE, '00000001'],
   R00: [EMPTY_BYTE, '00000010'],
   R01: [EMPTY_BYTE, '00000011'],

@@ -1,20 +1,10 @@
 export type Bit = "1" | "0";
 export type Byte = `${Bit}${Bit}${Bit}${Bit}${Bit}${Bit}${Bit}${Bit}`;
 export type HalfWord = [Byte, Byte];
-export type Instructions = "LOAD" | "STORE" | "SET" | "LOADH" | "STOREH" | "ADD" | "SUB" | "CJUMP" | "MOV";
-export type Register =
-    | "RPC"
-    | "RSP"
-    | "R00"
-    | "R01"
-    | "R02"
-    | "R03"
-    | "R04"
-    | "R05"
-    | "R06"
-    | "R07"
-    | "R08"
-    | "R09";
+
+export const Instructions = ["LOAD" , "STORE" , "SET" , "LOADH" , "STOREH" , "ADD" , "SUB" , "CJUMP" , "MOV"] as const;
+export const Registers = ['RPC', 'RSP', 'R00', 'R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07', 'R08', 'R09'] as const;
+
 export type Instruction = { opcode: Byte; operand1: HalfWord; operand2: HalfWord };
 export type Operation = (
     operand1: Instruction["operand1"],
