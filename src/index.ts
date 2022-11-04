@@ -15,7 +15,7 @@ export const InstructionBinaryMap: Record<Instructions, Byte> = {
   CJUMP: '00001000',
 };
 
-const registerBinaryCode: Record<Register, HalfWord> = {
+export const registerBinaryCode: Record<Register, HalfWord> = {
   RPC: [EMPTY_BYTE, '00000001'],
   R00: [EMPTY_BYTE, '00000010'],
   R01: [EMPTY_BYTE, '00000011'],
