@@ -13,6 +13,7 @@ export const InstructionBinaryMap: Record<Instructions, Byte> = {
   ADD: '00000110',
   SUB: '00000111',
   CJUMP: '00001000',
+  MOV: '00001001',
 };
 
 export const registerBinaryCode: Record<Register, HalfWord> = {

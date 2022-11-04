@@ -1,7 +1,7 @@
 export type Bit = "1" | "0";
 export type Byte = `${Bit}${Bit}${Bit}${Bit}${Bit}${Bit}${Bit}${Bit}`;
 export type HalfWord = [Byte, Byte];
-export type Instructions = "LOAD" | "STORE" | "SET" | "LOADH" | "STOREH" | "ADD" | "SUB" | "CJUMP";
+export type Instructions = "LOAD" | "STORE" | "SET" | "LOADH" | "STOREH" | "ADD" | "SUB" | "CJUMP" | "MOV";
 export type Register =
     | "RPC"
     | "RSP"
