@@ -1,0 +1,25 @@
+{
+  "name": "@danielhammerl/dca-architecture",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielhammerl/dca-architecture.git"
+  },
+  "author": "mail@danielhammerl.de",
+  "license": "ISC",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/danielhammerl/dca-architecture/issues"
+  },
+  "scripts": {
+    "build": "npm ci && tsc"
+  },
+  "homepage": "https://github.com/danielhammerl/dca-architecture#readme",
+  "dependencies": {
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}
