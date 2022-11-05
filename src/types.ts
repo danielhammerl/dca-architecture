@@ -4,7 +4,7 @@ export type HalfWord = [Byte, Byte];
 
 export const Instructions = ["LOAD" , "STORE" , "SET" , "LOADH" , "STOREH" , "ADD" , "SUB" , "CJUMP" , "MOV"] as const;
 export const Registers = ['RPC', 'RSP', 'R00', 'R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07', 'R08', 'R09'] as const;
-export const GpuInstructions = ['NOOP', 'CLEAR','DRAW'];
+export const GpuInstructions = ['NOOP', 'CLEAR','DRAW'] as const;
 
 export type Instruction = { opcode: Byte; operand1: HalfWord; operand2: HalfWord };
 export type Operation = (
