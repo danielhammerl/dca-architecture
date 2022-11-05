@@ -43,3 +43,8 @@ MOV
 move
 opcode: 00001001
 Beispiel: MOV R0 R1 -> kopiert wert von R0 in R1
+
+CJUMPI
+Conditional Jump inverted
+opcode: 00001010
+Beispiel: CJUMP R0 R1 -> Springt an adresse in R0 wenn der wert in R1 ungleich 0 ist
