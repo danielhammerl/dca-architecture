@@ -3,6 +3,7 @@ import { EMPTY_BYTE } from './constants';
 
 export * from './types';
 export * from './constants';
+export * from './gpu';
 
 export const InstructionBinaryMap: Record<typeof Instructions[number], Byte> = {
   LOAD: '00000001',

@@ -1,0 +1,28 @@
+Die GPU / die Videoausgabe wird über den Adressbereich 0xff00 - 0xffff gesteuert
+
+GPU unterstützt aktuell jeweils 2 Byte große x und y positionen (somit maximale theoretische auflösung von 65536x65536)
+und einen 2 Byte großen farbcode (16 bit high color, RGB565)
+
+Protokoll:
+
+Um mit der GPU zu kommunizieren, muss auf Adresse 0xff00 eine Instruktion liegen,
+diese besteht aus einem 1 Byte großen opcode, parameter und Daten der Instruktion beginnen folglich auf 0xff01
+
+Instruktionen:
+
+noop
+opcode: 0x00
+Beschreibung: Keine Instruktion, GPU macht nichts, ignoriert alle an bus anliegenden Daten
+
+clear
+opcode: 0x01
+Beschreibung: Der gpu buffer wird geleert, gpu zeigt schwarzes bild
+
+draw
+opcode: 0x02
+Beschreibung: Schreibt 1 Pixel in video buffer
+Parameter:
+    1. x-position (HalfWord)
+    2. y-position (HalfWord)
+    3. color code (HalfWord)
+

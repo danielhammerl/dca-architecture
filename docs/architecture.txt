@@ -15,3 +15,9 @@ Zeichensatz:
 Eine Instruktion besteht immer aus 5 Byte (Kommentar: wird sich zukünftig ändern auf variable länge)
 opcode (byte), operand1 (half-word) operand2 (half-word)
 
+Adressbus:
+Adressbus ist 16 bit groß, entsprechend besteht er aus 65536 Byte
+Teile des Adressbusses sind für Peripherie reserviert, der Rest ist einfacher RAM
+
+Reserviert sind adressen:
+0xff00 - 0xffff -> GPU
