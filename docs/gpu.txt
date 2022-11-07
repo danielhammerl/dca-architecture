@@ -18,11 +18,15 @@ clear
 opcode: 0x01
 Beschreibung: Der gpu buffer wird geleert, gpu zeigt schwarzes bild
 
-draw
+buffer
 opcode: 0x02
 Beschreibung: Schreibt 1 Pixel in video buffer
 Parameter:
     1. x-position (HalfWord)
     2. y-position (HalfWord)
     3. color code (HalfWord)
+
+draw
+opcode: 0x03
+Beschreibung: Rendert den aktuellen buffer
 
