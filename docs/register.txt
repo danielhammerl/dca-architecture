@@ -47,3 +47,7 @@ Adresse: 00000000 00001010
 R09:
 Allgemeines Register 9
 Adresse: 00000000 00001011
+
+R10:
+Allgemeines Register 10
+Adresse: 00000000 00001111 (15)
