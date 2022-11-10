@@ -50,4 +50,4 @@ Adresse: 00000000 00001011
 
 R10:
 Allgemeines Register 10
-Adresse: 00000000 00001111 (15)
+Adresse: 00000000 00001100 (12)
