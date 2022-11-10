@@ -14,7 +14,21 @@ export const Instructions = [
   'MOV',
   'CJUMPI',
 ] as const;
-export const Registers = ['RPC', 'RSP', 'R00', 'R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07', 'R08', 'R09'] as const;
+export const Registers = [
+  'RPC',
+  'RSP',
+  'R00',
+  'R01',
+  'R02',
+  'R03',
+  'R04',
+  'R05',
+  'R06',
+  'R07',
+  'R08',
+  'R09',
+  'R10',
+] as const;
 export const GpuInstructions = ['NOOP', 'CLEAR', 'BUFFER', 'DRAW'] as const;
 
 export type Instruction = { opcode: Byte; operand1: HalfWord; operand2: HalfWord };

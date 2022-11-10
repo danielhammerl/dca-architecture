@@ -30,5 +30,6 @@ export const registerBinaryCode: Record<typeof Registers[number], HalfWord> = {
   R07: [EMPTY_BYTE, '00001001'],
   R08: [EMPTY_BYTE, '00001010'],
   R09: [EMPTY_BYTE, '00001011'],
+  R10: [EMPTY_BYTE, '00001111'],
   RSP: [EMPTY_BYTE, '00100000'],
 };
