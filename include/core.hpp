@@ -2,8 +2,8 @@
 // Created by Daniel Hammerl on 15.11.22.
 //
 
-#ifndef DCA_ARCHITECTURE_CORE_H
-#define DCA_ARCHITECTURE_CORE_H
+#ifndef DCA_ARCHITECTURE_CORE_HPP
+#define DCA_ARCHITECTURE_CORE_HPP
 
 #include <cstdint>
 
@@ -25,6 +25,10 @@ namespace dca {
             const uint8_t NOOP = 0, CLEAR = 1, BUFFER = 2, DRAW = 3;
         }
     }
+
+    namespace Memory {
+        const int MAX_LENGTH = 65536;
+    }
 }
 
-#endif //DCA_ARCHITECTURE_CORE_H
+#endif //DCA_ARCHITECTURE_CORE_HPP
