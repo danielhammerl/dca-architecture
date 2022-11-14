@@ -7,8 +7,8 @@
   },
   "author": "mail@danielhammerl.de",
   "license": "ISC",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "ts-build/index.js",
+  "types": "ts-build/index.d.ts",
   "bugs": {
     "url": "https://github.com/danielhammerl/dca-architecture/issues"
   },

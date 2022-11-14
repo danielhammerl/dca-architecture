@@ -4,10 +4,12 @@
     "esModuleInterop": true,
     "strict": true,
     "allowJs": true,
-    "outDir": "build/",
+    "outDir": "ts-build/",
     "declaration": true,
     "lib": ["es2017"]
   },
-  "include": ["src/*.ts"],
+  "include": [
+    "ts-src/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
