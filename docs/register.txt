@@ -2,52 +2,52 @@ Liste aller Register:
 
 RPC:
 Program counter, enthält memory address der aktuellen anweisung
-Adresse: 00000000 00000001
+Adresse: 00000000 00000001 (0x1)
 
 RSP:
 Stack pointer, zeigt auf begin des memory stacks
-Adresse: 00000000 00100000
+Adresse: 00000000 00100000 (0x20)
 
 R00:
 Allgemeines Register 0
-Adresse: 00000000 00000010
+Adresse: 00000000 00000010 (0x2)
 
 R01:
 Allgemeines Register 1
-Adresse: 00000000 00000011
+Adresse: 00000000 00000011 (0x3)
 
 R02:
 Allgemeines Register 2
-Adresse: 00000000 00000100
+Adresse: 00000000 00000100 (0x4)
 
 R03:
 Allgemeines Register 3
-Adresse: 00000000 00000101
+Adresse: 00000000 00000101 (0x5)
 
 R04:
 Allgemeines Register 4
-Adresse: 00000000 00000110
+Adresse: 00000000 00000110 (0x6)
 
 R05:
 Allgemeines Register 5
-Adresse: 00000000 00000111
+Adresse: 00000000 00000111 (0x7)
 
 R06:
 Allgemeines Register 6
-Adresse: 00000000 00001000
+Adresse: 00000000 00001000 (0x8)
 
 R07:
 Allgemeines Register 7
-Adresse: 00000000 00001001
+Adresse: 00000000 00001001 (0x9)
 
 R08:
 Allgemeines Register 8
-Adresse: 00000000 00001010
+Adresse: 00000000 00001010 (0xa)
 
 R09:
 Allgemeines Register 9
-Adresse: 00000000 00001011
+Adresse: 00000000 00001011 (0xb)
 
 R10:
 Allgemeines Register 10
-Adresse: 00000000 00001100 (12)
+Adresse: 00000000 00001100 (0xc))
