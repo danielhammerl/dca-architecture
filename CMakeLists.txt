@@ -7,3 +7,8 @@ add_library(dca_architecture INTERFACE)
 
 set_target_properties(dca_architecture PROPERTIES LINKER_LANGUAGE CXX)
 target_include_directories(dca_architecture INTERFACE .)
+
+install(DIRECTORY include
+        DESTINATION .
+        COMPONENT devel
+        FILES_MATCHING PATTERN "*.hpp" PATTERN "*.inl")
