@@ -27,7 +27,7 @@ namespace dca {
     }
 
     namespace Memory {
-        const int MAX_LENGTH = 65536;
+        const int MEMORY_MAX_LENGTH = 65536;
     }
 }
 
