@@ -6,9 +6,6 @@ add_library(dca_architecture INTERFACE)
 
 
 set_target_properties(dca_architecture PROPERTIES LINKER_LANGUAGE CXX)
-target_include_directories(dca_architecture INTERFACE .)
+target_include_directories(dca_architecture INTERFACE ./include)
 
-install(DIRECTORY include
-        DESTINATION .
-        COMPONENT devel
-        FILES_MATCHING PATTERN "*.hpp" PATTERN "*.inl")
+install(TARGETS dca_architecture PUBLIC_HEADER DESTINATION include)
