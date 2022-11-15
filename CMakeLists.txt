@@ -1,16 +1,20 @@
 cmake_minimum_required(VERSION 3.23)
-project(dca_architecture)
-
-set(CMAKE_CXX_STANDARD 20)
-add_library(dca_architecture INTERFACE)
-
-set_target_properties(dca_architecture PROPERTIES LINKER_LANGUAGE CXX)
-target_include_directories(dca_architecture INTERFACE ./include)
-
+project(dca_core VERSION 0.4)
 include(GNUInstallDirs)
 
-install(TARGETS ${PROJECT_NAME}
-        EXPORT "${PROJECT_NAME}Targets"
-        PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME} # include/SomeLibrary
-        INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR} # include
-        )
+set(CMAKE_CXX_STANDARD 20)
+add_library(dca_core INTERFACE)
+target_compile_features(dca_core INTERFACE cxx_std_20)
+
+target_include_directories(dca_core INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+install(TARGETS dca_core
+        EXPORT ${PROJECT_NAME}_Targets
+        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+
+include(CMakePackageConfigHelpers)
+write_basic_package_version_file("DcaCoreConfigVersion.cmake"
+        VERSION ${PROJECT_VERSION}
+        COMPATIBILITY SameMajorVersion)
