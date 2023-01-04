@@ -1,4 +1,4 @@
-REVISION: 0.3
+REVISION: 0.5
 
 Self thought cpu architecture
 
