@@ -20,4 +20,5 @@ Adressbus ist 16 bit groß, entsprechend besteht er aus 65536 Byte
 Teile des Adressbusses sind für Peripherie reserviert, der Rest ist einfacher RAM
 
 Reserviert sind adressen:
-0xff00 - 0xffff -> GPU
+0xff00 - 0xfffe -> GPU
+0xffff -> rückgabe wert des programms
