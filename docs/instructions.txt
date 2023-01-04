@@ -15,7 +15,7 @@ Beispiel: STORE R0 R1 -> Speichert least significant byte aus R0 in memory addre
 SET:
 Setzt wert von register, nicht anwendbar auf read-only register
 opcode: 00000011 (0x3)
-Beispiel: SET R0 00000000 00000111 -> Setzt R0 auf den wert 7 (00000000 00000111)
+Beispiel: SET R0 0x07 -> Setzt R0 auf den wert 7 (00000000 00000111)
 
 LOADH:
 Lädt Half Word aus Speicher in Register
@@ -27,12 +27,12 @@ opcode: 00000101 (0x5)
 ADD:
 Addiert Wert
 opcode: 00000110 (0x6)
-Beispiel: ADD R0 R1 -> Addiert die Werte in R0 und R1 (r0 - r1) und speichert das ergebnis in R0
+Beispiel: ADD R0 R1 -> Addiert die Werte in R0 und R1 und speichert das ergebnis in R0 (R0 += R1)
 
 SUB:
 Subtrahiert Wert
 opcode: 00000111 (0x7)
-Beispiel: SUB R0 R1 -> Subtrahiert R1 von R0 und speichert das Ergebnis in R0
+Beispiel: SUB R0 R1 -> Subtrahiert R1 von R0 und speichert das Ergebnis in R0 (R0 -= R1);
 
 CJUMP
 Conditional Jump
