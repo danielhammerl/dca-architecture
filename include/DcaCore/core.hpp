@@ -15,7 +15,7 @@ namespace dca {
 
     namespace Instructions {
         const uint8_t LOAD = 1, STORE = 2, SET = 3, LOADH = 4, STOREH = 5, ADD = 6,
-                SUB = 7, CJUMP = 8, MOV = 9, CJUMPI = 10;
+                SUB = 7, CJUMP = 8, MOV = 9, CJUMPI = 10, END = 11;
     }
 
     namespace Gpu {

@@ -48,3 +48,8 @@ CJUMPI
 Conditional Jump inverted
 opcode: 00001010 (0xa)
 Beispiel: CJUMP R0 R1 -> Springt an adresse in R0 wenn der wert in R1 ungleich 0 ist
+
+END
+End of Program, wenn diese Instruktion erreicht wird, wird das Programm und der Simulator beendet
+opcode: 00001011 (0xb)
+
