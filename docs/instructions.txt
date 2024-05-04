@@ -15,7 +15,7 @@ Beispiel: STORE R0 R1 -> Speichert least significant byte aus R0 in memory addre
 SET:
 Setzt wert von register, nicht anwendbar auf read-only register
 opcode: 00000011 (0x3)
-Beispiel: SET R0 00000000 00000111 -> Setzt R0 auf den wert 7 (00000000 00000111)
+Beispiel: SET R0 0x7 -> Setzt R0 auf den wert 7 (00000000 00000111)
 
 LOADH:
 Lädt Half Word aus Speicher in Register
@@ -52,4 +52,4 @@ Beispiel: CJUMP R0 R1 -> Springt an adresse in R0 wenn der wert in R1 ungleich 0
 SJUMP
 Static Jump
 opcode: 00001011 (0xb)
-Beispiel SJUMP R0 R1 -> Springt an adresse in R0. Zweiter Parameter wird ignoriert
+Beispiel SJUMP 0xf5 0x0 -> Springt an adresse 0xf5. Zweiter Parameter wird ignoriert
