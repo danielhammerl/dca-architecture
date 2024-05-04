@@ -16,7 +16,7 @@ export const InstructionBinaryMap: Record<typeof Instructions[number], Byte> = {
   CJUMP: '00001000',
   MOV: '00001001',
   CJUMPI: '00001010',
-  END: '00001011'
+  SJUMP: '00001011',
 };
 
 export const registerBinaryCode: Record<typeof Registers[number], HalfWord> = {

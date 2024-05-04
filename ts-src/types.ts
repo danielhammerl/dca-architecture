@@ -13,7 +13,7 @@ export const Instructions = [
   'CJUMP',
   'MOV',
   'CJUMPI',
-  'END'
+  'SJUMP',
 ] as const;
 export const Registers = [
   'RPC',
